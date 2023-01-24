@@ -1,7 +1,7 @@
 /*
-****
+********
 Reset
-****
+********
 */
 
 * {
@@ -11,48 +11,72 @@ Reset
 }
 
 /*
-****
+********
 Debug
-****
+********
 */
 
-
-
-.debug header .header-top .header-bar>div,
-.debug header .header-top .header-bar>nav,
-.debug header .header-bottom > div,
-.debug main section .row > div,
-.debug .footer-top > div
+/* box borders */
+.debug .header-top div > *,
+.debug .header-bottom > *,
+.debug main div > div,
+.debug footer div > div
  {
     border: 2px dashed black;
-}
-
-.debug header .header-bottom .content {
-    height: 400px;
-}
-
-
-.debug main section .row > .col-big,
-.debug main section .row > .col-small {
-    height: 600px;
-}
-
-
-
-.debug main section .row > .col-full {
-    height: 900px;
 }
 
 .debug footer .footer-top .menu-column > .col {
     border: 2px dashed white;
 }
 
+/* colors */
 
+.debug header .header-top {
+    background-color: #add8e6;
+}
+
+.debug header .header-bottom {
+    background-color: #00008b;
+}
+
+.debug header .header-top .header-bar > * {
+    background-color: goldenrod;
+}
+
+.debug header .header-bottom .content {
+    background-color: #ee82ee;
+}
+
+.debug footer .footer-bottom {
+    background-color: aquamarine;
+}
+
+.debug footer .footer-bottom > .col {
+    background-color: pink;
+}
+
+/* heights */
+.debug header .header-bottom .content {
+    height: 400px;
+}
+
+.debug main section .row > .col-big,
+.debug main section .row > .col-small {
+    height: 600px;
+}
+
+.debug main section .row > .col-full {
+    height: 900px;
+}
+
+.debug footer .footer-top {
+    height: 600px
+}
 
 /*
-****
+********
 Common
-****
+********
 */
 
 .container {
@@ -67,36 +91,33 @@ Common
     max-width: 900px;
 }
 
-
-
-
-
 /*
-****
+********
 Header
-****
+********
 */
 
 header {
     border-bottom: 4px solid #add8e6;
+    background-color: #add8e6;
 }
 
 header .header-top {
-    background-color: #add8e6;
-    padding: 15px 0;
+    /* disattivare padding se header-bar altezza fissa e flex */
+    padding: 16px;
 }
 
 header .header-top .header-bar {
     display: flex;
-    background-color: goldenrod;
-    align-items: center;
-
+    /* 
+    /* align-items: center; */
+    /* height: 80px; */
 }
 
-header .header-top .header-bar > div,
-header .header-top .header-bar > nav {
+header .header-top .header-bar > * {
     padding: 10px;
 }
+
 
 header .header-top .header-login {
     text-align: right;
@@ -119,7 +140,6 @@ header .header-top .header-links ul {
 }
 
 header .header-bottom {
-    background-color: #00008b;
     display: flex;
     padding: 50px;
     align-items: center;
@@ -127,14 +147,13 @@ header .header-bottom {
 }
 
 header .header-bottom .content {
-    background-color: #ee82ee;
     width: 900px;
 }
 
 /*
-****
+********
 Main
-****
+********
 */
 
 main section {
@@ -166,9 +185,9 @@ main section .row > .col-full {
 }
 
 /*
-****
+********
 Footer
-****
+********
 */
 
 footer {
@@ -178,7 +197,6 @@ footer {
 footer .footer-top {
     display: flex;
     padding: 10px 0;
-    height: 600px; /* height demo per align items stretch */
 }
 
 footer .footer-top .main-column {
@@ -193,11 +211,24 @@ footer .footer-top .menu-column {
     justify-content: space-between;
 }
 
-
 footer .footer-top .menu-column > .col {
     flex-basis: 25%;
 }
 
 footer hr {
     margin: 30px 0;
+}
+
+footer .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+
+    /* esempio flex */
+    /* height: 80px;
+    align-items: center; */
+    padding: 22px 0;
+}
+
+footer .footer-bottom > .col {
+    padding: 5px 10px;
 }
