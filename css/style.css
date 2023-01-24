@@ -1,5 +1,102 @@
+/*
+****
+Reset
+****
+*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+/*
+****
+Debug
+****
+*/
+
+
+
+.debug header .header-top .header-bar>div,
+.debug header .header-top .header-bar>nav {
+    border: 2px dashed black;
+}
+
+
+/*
+****
+Common
+****
+*/
+
+.container {
+    margin: 0 auto;
+}
+
+.container.big {
+    max-width: 1200px;
+}
+
+.container.small {
+    max-width: 900px;
+}
+
+
+
+
+
+/*
+****
+Header
+****
+*/
+
+header .header-top {
+    background-color: #add8e6;
+    padding: 15px 0;
+}
+
+header .header-top .header-bar {
+    display: flex;
+    background-color: goldenrod;
+    align-items: center;
+
+}
+
+header .header-top .header-bar>div,
+header .header-top .header-bar>nav {
+    padding: 10px;
+}
+
+header .header-top .header-login {
+    text-align: right;
+}
+
+header .header-top .header-links {
+    flex-grow: 1;
+}
+
+header .header-top .header-links ul {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+
+}
+
+
+
+/*
+****
+Main
+****
+*/
+
+
+
+/*
+****
+Footer
+****
+*/
