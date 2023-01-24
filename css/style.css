@@ -21,7 +21,8 @@ Debug
 .debug header .header-top .header-bar>div,
 .debug header .header-top .header-bar>nav,
 .debug header .header-bottom > div,
-.debug main section .row > div
+.debug main section .row > div,
+.debug .footer-top > div
  {
     border: 2px dashed black;
 }
@@ -40,6 +41,10 @@ Debug
 
 .debug main section .row > .col-full {
     height: 900px;
+}
+
+.debug footer .footer-top .menu-column > .col {
+    border: 2px dashed white;
 }
 
 
@@ -126,11 +131,6 @@ header .header-bottom .content {
     width: 900px;
 }
 
-
-
-
-
-
 /*
 ****
 Main
@@ -165,12 +165,39 @@ main section .row > .col-full {
     background-color: #228b22;
 }
 
-
-
-
-
 /*
 ****
 Footer
 ****
 */
+
+footer {
+    background-color: #23272a;
+}
+
+footer .footer-top {
+    display: flex;
+    padding: 10px 0;
+    height: 600px; /* height demo per align items stretch */
+}
+
+footer .footer-top .main-column {
+    flex-basis: 30%;
+    background-color: #f08080;
+}
+
+footer .footer-top .menu-column {
+    flex-basis: 70%;
+    background-color: #20b2aa;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer .footer-top .menu-column > .col {
+    flex-basis: 25%;
+}
+
+footer hr {
+    margin: 30px 0;
+}
