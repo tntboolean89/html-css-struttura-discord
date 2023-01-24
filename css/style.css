@@ -23,6 +23,11 @@ Debug
     border: 2px dashed black;
 }
 
+.debug header .header-bottom .content {
+    height: 400px;
+}
+
+
 
 /*
 ****
@@ -52,6 +57,10 @@ Header
 ****
 */
 
+header {
+    border-bottom: 4px solid #add8e6;
+}
+
 header .header-top {
     background-color: #add8e6;
     padding: 15px 0;
@@ -64,13 +73,18 @@ header .header-top .header-bar {
 
 }
 
-header .header-top .header-bar>div,
-header .header-top .header-bar>nav {
+header .header-top .header-bar > div,
+header .header-top .header-bar > nav {
     padding: 10px;
 }
 
 header .header-top .header-login {
     text-align: right;
+}
+
+header .header-top .header-logo,
+header .header-top .header-login {
+    width: 20%;
 }
 
 header .header-top .header-links {
@@ -82,8 +96,23 @@ header .header-top .header-links ul {
     display: flex;
     gap: 10px;
     justify-content: center;
-
 }
+
+header .header-bottom {
+    background-color: #00008b;
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: center;
+}
+
+header .header-bottom .content {
+    background-color: #ee82ee;
+    width: 900px;
+}
+
+
+
 
 
 
