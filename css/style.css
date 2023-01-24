@@ -103,14 +103,13 @@ header {
 }
 
 header .header-top {
-    /* disattivare padding se header-bar altezza fissa e flex */
+    /* disattivare padding se header-bar altezza fissa */
     padding: 16px;
 }
 
 header .header-top .header-bar {
     display: flex;
-    /* 
-    /* align-items: center; */
+    align-items: center;
     /* height: 80px; */
 }
 
