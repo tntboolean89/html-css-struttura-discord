@@ -19,12 +19,27 @@ Debug
 
 
 .debug header .header-top .header-bar>div,
-.debug header .header-top .header-bar>nav {
+.debug header .header-top .header-bar>nav,
+.debug header .header-bottom > div,
+.debug main section .row > div
+ {
     border: 2px dashed black;
 }
 
 .debug header .header-bottom .content {
     height: 400px;
+}
+
+
+.debug main section .row > .col-big,
+.debug main section .row > .col-small {
+    height: 600px;
+}
+
+
+
+.debug main section .row > .col-full {
+    height: 900px;
 }
 
 
@@ -121,6 +136,36 @@ header .header-bottom .content {
 Main
 ****
 */
+
+main section {
+    padding: 50px;
+}
+
+main section:nth-child(even){
+    background-color: #d3d3d3;
+}
+
+main section .row {
+    display: flex;
+    justify-content: space-between;
+}
+
+main section .row > .col-big {
+    width: 60%;
+    background-color: #1e90ff;
+}
+
+main section .row > .col-small {
+    width: 40%;
+    background-color: #ffc0cb;
+}
+
+main section .row > .col-full {
+    width: 100%;
+    background-color: #228b22;
+}
+
+
 
 
 
